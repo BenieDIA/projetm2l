@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Connexion M2L</title>
+</head>
+<body>
+    <header>M2L</header>
+    <div class="container">
+        <h1>BIENVENUE sur l'espace de connexion M2L</h1>
+        <p>Veuillez entrer votre identifiant et votre mot de passe</p>
+        <form id="loginForm">
+            <input type="text" id="username" class="input-box" placeholder="Username">
+            <br>
+            <input type="password" id="password" class="input-box" placeholder="Password">
+            <br>
+            <p class="forgot">Mot de passe oublié?</p>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "user" && password === "1234") {
+                window.location.href = "connected.html";
+            } else {
+                alert("Identifiant ou mot de passe incorrect");
+            }
+        });
+    </script>
+</body>
+</html>

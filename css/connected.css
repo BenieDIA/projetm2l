@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+header {
+    background: linear-gradient(to right, #3ec6e0, #5ed3f3);
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-box {
+    background-color: #3ec6e0;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 20px;
+}
+.info-card {
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    width: 350px;
+    margin: 50px auto 20px auto; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.info-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #3ec6e0;
+    margin-right: 15px;
+}
+
+.info-text {
+    text-align: left;
+    font-size: 16px;
+    color: #333; 
+}
+
+.info-text p {
+    margin: 5px 0;
+}
+
+.info-text p strong {
+    font-size: 18px;
+    color: #0099cc; 
+}
+.container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+}
+
+.welcome-message {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    background-color: #0099cc;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px; 
+}
