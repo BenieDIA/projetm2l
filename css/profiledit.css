@@ -12,7 +12,7 @@ body {
    
     text-align: center;
 }
-.header {
+header {
     position: absolute;
     top: 0;
     left: 0;
@@ -34,12 +34,19 @@ label {
     margin-bottom: 5px;
     font-weight: bold;
 }
-input[type="text"], input[type="password"] , select[name="civilite"], input[type="date"], input[type="mail"] {
+input[type="text"], input[type="password"] , select[name="civilite"], input[type="date"], input[type="mail"],input[type="file"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+select[name="civilite"]{
+    width: 104%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 .btn {
     background-color: #2dbbd6;
     color:linear-gradient(to right, #0a3d62, #3ec6e0);;
